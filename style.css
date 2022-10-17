@@ -1,0 +1,134 @@
+@charset "UTF-8";
+@font-face {
+	font-family: 'fontelogo';
+	src: url("_fonts/bubblegum-sans-regular.otf");
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{ 
+       
+    background: url(img-main/dune-2020.jpg);
+    
+}
+main{
+    background-image: url();
+    grid-area: main;      
+    height: 1400px; 
+    background-color: #ffffff;
+    margin: 0px 32px 10px;
+    border-radius: 0.25rem;
+    margin-right: 25px;
+    
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+    "header header"
+    "aside main"
+    "footer footer";
+    gap: 5px;
+}
+header{
+    
+    grid-area: header;
+    display: flex ;
+    justify-content: center;
+}
+div{
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2vw;
+}
+h1{
+    font-family: fontelogo, sans-serif ;
+    text-align: center;
+    color:rgb(41, 41, 41);
+}
+button {
+    background-color: #f0f0f0;
+    padding: 8px;
+    margin-left: -25px;
+    color: rgb(41, 41, 41);
+    height: 5vh;
+    border: 1px solid #f0f0f0;
+    border-radius: 0.25rem;
+}
+input{
+    background-color: #f0f0f0;
+    text-align: center;
+    width: 30%;
+    height: 5vh;
+    border: 1px solid #f0f0f0;
+    border-radius: 0.25rem;
+    color: #424142;
+}
+aside{
+    
+    background-color: #ffffff;
+    grid-area: aside;
+    display: grid ;
+    height: 1400px;
+    border-radius: 0.25rem;
+    margin-left: 25px;
+    margin: 0px 0px 10px 18px;
+}
+.coluna{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0.2em;
+    align-items:center;
+    
+  }
+
+a{
+    color:rgb(41, 41, 41);
+    text-decoration: none;
+  }
+
+.section{
+    /* display: flex; */
+    color: rgb(0, 0, 0);
+    height: 200px;
+    width: 70%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;    
+    margin: 10px;
+    border-radius: 0.25rem;   
+    gap: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);    
+}
+#filme{
+    display: grid;
+     flex-direction: column; 
+     align-items: center;
+     justify-items: center;
+     
+
+    
+}
+ul{ list-style: none;
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.foo1{
+    border: 5px solid rgb(41, 41, 41);
+    border-radius: 0.30rem; 
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    background: linear-gradient(to bottom, 
+    rgb(255, 255, 255), rgb(80, 79, 79));
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+        
+}
+
